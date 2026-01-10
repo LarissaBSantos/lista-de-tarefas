@@ -1,0 +1,166 @@
+:root {
+  --amarelo: #ffe181;
+  --cinza: #eee9e5;
+  --bege: #fad3b2;
+  --laranja: #ffba7f;
+  --vermelho: #ff9c97;
+  --texto: #313131;
+  --verde: #9aff97;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*  */
+
+html, body{
+    height: 100%;
+}
+
+body {
+    background-color: var(--bege);
+    color: var(--texto);
+    font-family: system-ui, serif, sans-serif;
+    font-size: 12px;
+}
+
+header {
+    border: 0.1em solid #c9c9c9;
+    height: 5em;
+}
+
+main {
+    padding: 2em;
+}
+
+header, footer {
+    padding: 1em;
+    text-align: right;
+}
+
+header div img {
+    width: 2em;
+    height: 2em;
+}
+
+nav {
+    padding: 2em;
+}
+
+a {
+    margin: 0.5em;
+    font-family: system-ui;
+}
+
+footer {
+    font-size: xx-small;
+    font-family: serif, sans-serif;
+    margin: 0.5em;
+    align-self: baseline;
+    bottom: 0;
+    position: fixed;
+    width: 95%;
+    text-align: right;
+}
+
+h1, h6, form {
+    margin: 0.5em;
+}
+
+h1 {
+    font-size: x-large;
+}
+
+h6 {
+    font-size: x-small;
+}
+
+/* styles of login page */
+
+form {
+  border-radius: 5px;
+  /* background-color: #f2f2f2; */
+  background-color: var(--cinza);
+  padding: 20px;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 8px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: var(--verde);
+  padding: 12px;
+  margin: 4px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #6db66a;
+}
+
+.main_form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div_form {
+    display: list-item;
+    flex-direction: column;
+    list-style: none;
+    margin-bottom: 0.5em;
+}
