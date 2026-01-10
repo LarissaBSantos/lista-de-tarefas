@@ -119,13 +119,25 @@ h6 {
     font-size: x-small;
 }
 
-/* styles of login page */
+/* styles of login and register page */
 
-form {
+.main_form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+form.form_auth {
   border-radius: 5px;
-  /* background-color: #f2f2f2; */
   background-color: var(--cinza);
   padding: 20px;
+}
+
+.div_form {
+    display: list-item;
+    flex-direction: column;
+    list-style: none;
+    margin-bottom: 0.5em;
 }
 
 input[type=text] {
@@ -152,15 +164,7 @@ input[type=submit]:hover {
   background-color: #6db66a;
 }
 
-.main_form {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.div_form {
-    display: list-item;
-    flex-direction: column;
-    list-style: none;
-    margin-bottom: 0.5em;
+/* styeles of logout */
+button.button_logout{
+    cursor: pointer;
 }

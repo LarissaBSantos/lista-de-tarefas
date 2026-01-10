@@ -7,7 +7,7 @@
 
         @include('components.error_form')
 
-        <form action="/login" method="POST">
+        <form action="/login" method="POST" class="form_auth">
             @csrf
             <div class="div_form">
                 <label for="email">Email*:</label>
